@@ -1,0 +1,55 @@
+{
+  "timestamp": "2022-02-16T22:54:01.754Z",
+  "collectionName": "test collections one",
+  "collectionId": "XXXXX-XXXXX-XXXXXX1",
+  "userId": 1,
+  "ownerName": "owner_name1",
+  "itemIds": [
+    {
+      "timestamp": "2022-02-16T22:54:01.754Z",
+      "tokenUri": "http://localhost:8090/urlddddddddddd",
+      "price": 88888.000000003333,
+      "listingPrice": 222.000000003333,
+      "seller": "UPDATE The seller name here",
+      "owner": "UPDATEthe owner name is now",
+      "image":"UPDATEhere we need a link to the image name",
+      "imageName":"the image name",
+      "description":"FIRST ITEM the is the item descritpion to send to the database",
+      "userId":1,
+      "hashTag": "@hashTag1",
+      "itemId": 1
+
+    },
+    {
+      "timestamp": "2022-02-16T22:54:01.754Z",
+      "tokenUri": "http://localhost:8090/urlddddddddddd/eee",
+      "price": 2.000000003333,
+      "listingPrice": 222.000000003333,
+      "seller": "UPDATE The seller name here",
+      "owner": "the owner name is now",
+      "image":"here we need a link to the image name",
+      "imageName":"the image name",
+      "description":"SECOND ITEM the is the item description to send to the database",
+      "userId":1,
+      "hashTag": "@hashTag1",
+      "itemId": 2
+
+    },
+    {
+      "timestamp": "2022-02-16T22:54:01.754Z",
+      "tokenUri": "http://localhost:8090/urlddddddddddd",
+      "price": 3.000000003333,
+      "listingPrice": 222.000000003333,
+      "seller": " UPDATE The seller name here",
+      "owner": "the owner name is now",
+      "image":"here we need a link to the image name",
+      "imageName":"the image name",
+      "description":"THIRD ITEM the is the item descritpion to send to the database",
+      "userId":1,
+      "hashTag": "@hashTag1",
+      "itemId": 3
+
+    }
+  ]
+
+}

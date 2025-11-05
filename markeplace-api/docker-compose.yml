@@ -1,0 +1,76 @@
+version: '3'
+services:
+
+   #nextjs-ui:
+    #image: imageName
+     #container_name: nft-ui
+     #ports:
+      # - "3000:3000"    
+     #build:
+       #context: ./  
+       #dockerfile: Dockerfile
+    #vstdin_open: true
+     #volumes:
+       # - ./:/nft-ui
+     #networks:
+       #- nft-market-net
+    #depends_on:
+  
+   #hardhat:
+     #build:
+       #context: ./
+       #dockerfile: Dockerfile.dev
+     #restart: always
+     #command: yarn run dev
+    # volumes:
+   #   - ./:/nft-ui
+   #   - ./nft-ui/node_modules
+   #   - ./nft-ui/contracts:/app/tmp/contracts
+  #  ports:
+   #   - 8545:8545
+   # networks:
+   #   - nft-market-net  
+
+  maria-db:
+    image: mariadb:${MARIADB_TAG:-10.3.16}
+    restart: always
+    hostname: mariadb
+    container_name: mariadb
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: root
+    ports:
+      - 3306:3306
+    cap_add:
+      - SYS_ADMIN
+    healthcheck:
+      test: mysqlshow -h 27.0.0.1 -P 3306 --PASSWORD=root --wait-timeout=28800 --max-allowed-packet=97108864
+    volumes:
+      - ./db/:/docker-entrypoint-initdb.d
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
+    networks:
+      - nft-market-net  
+
+
+  app:
+    depends_on:
+      - maria-db
+    hostname: restapi
+    build: ./
+    restart: on-failure
+    env_file: ./.env
+    ports:
+      - 8080:8080
+#    extra_hosts:
+#      - "host.docker.internal:host-gateway"
+    networks:
+      - nft-market-net
+    volumes:
+      - .m2:/root/.m2
+    stdin_open: true
+    tty: true
+
+networks:
+  nft-market-net:
+    driver: bridge

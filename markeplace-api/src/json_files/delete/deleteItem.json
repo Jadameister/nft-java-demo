@@ -1,0 +1,17 @@
+{
+ {
+   "timestamp": "2022-02-16T22:54:01.754Z",
+   "tokenUri": "http://localhost:8090/urlddddddddddd",
+   "price": 111.000000003333,
+   "listingPrice": 222.000000003333,
+   "seller": "The seller name here",
+   "owner": "the owner name is now",
+   "image":"here we need a link to the image name",
+   "imageName":"the image name",
+   "description":"the is the item description to send to the database",
+   "userId":1,
+   "hashTag": "@hashTag1"
+   "itemId": 10
+
+ }
+}

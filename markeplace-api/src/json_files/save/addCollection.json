@@ -1,0 +1,76 @@
+{
+  "timestamp": "2022-02-16T22:54:01.754Z",
+  "collectionName": "test collections one",
+  "userId":2 ,
+  "ownerName": "owner_name1",
+  "itemIds": [
+    {
+      "editionNum":1,
+      "userId":2,
+      "tokenUri": "http://localhost:8090/urlddddddddddd",
+      "price": 1.000000003333,
+      "listingPrice": 222.000000003333,
+      "seller": "The seller name here",
+      "owner": "the owner name is now",
+      "image":"here we need a link to the image name",
+      "itemName":"the image name",
+      "creatorName":"creater name",
+      "description":"FIRST ITEM the is the item descritpion to send to the database",
+      "itemHashtags": "hashTag1",
+      "percentage": "5",
+      "releaseDate": "2022-02-16T22:54:01.754Z"
+    },
+    {
+      "editionNum":1,
+      "userId":2,
+      "tokenUri": "http://localhost:8090/urlddddddddddd",
+      "price": 1.000000003333,
+      "listingPrice": 222.000000003333,
+      "seller": "The seller name here",
+      "owner": "the owner name is now",
+      "image":"here we need a link to the image name",
+      "itemName":"the image name",
+      "creatorName":"creater name",
+      "description":"FIRST ITEM the is the item descritpion to send to the database",
+      "itemHashtags": "hashTag1",
+      "percentage": "6",
+      "releaseDate": "2022-02-16T22:54:01.754Z"
+    },
+    {
+      "editionNum":1,
+      "userId":2,
+      "tokenUri": "http://localhost:8090/urlddddddddddd",
+      "price": 1.000000003333,
+      "listingPrice": 222.000000003333,
+      "seller": "The seller name here",
+      "owner": "the owner name is now",
+      "image":"here we need a link to the image name",
+      "itemName":"the image name",
+      "creatorName":"creater name",
+      "description":"FIRST ITEM the is the item descritpion to send to the database",
+      "itemHashtags": "hashTag1",
+      "percentage": "7",
+      "releaseDate": "2022-02-16T22:54:01.754Z"
+    },
+    {
+      "editionNum":1,
+      "userId":2,
+      "tokenUri": "http://localhost:8090/urlddddddddddd",
+      "price": 1.000000003333,
+      "listingPrice": 222.000000003333,
+      "seller": "The seller name here",
+      "owner": "the owner name is now",
+      "image":"here we need a link to the image name",
+      "itemName":"the image name",
+      "creatorName":"creater name",
+      "description":"FIRST ITEM the is the item descritpion to send to the database",
+      "itemHashtags": "hashTag1",
+      "percentage": "8",
+      "releaseDate": "2022-02-16T22:54:01.754Z"
+    }
+
+
+
+  ]
+
+}

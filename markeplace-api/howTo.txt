@@ -1,0 +1,4 @@
+save collection:
+http://localhost:8080/api/addCollection
+get myCollections:
+http://localhost:8080/api/myCollection/1
